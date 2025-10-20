@@ -1,6 +1,8 @@
+using MySql.Data.MySqlClient;
+
 public class Operacoes
 {
-    private string connectionString = "";
+    private string connectionString = @"server=phpmyadmin.uni9.marize.us;User ID=user_poo;password=S3nh4!F0rt3;database=user_poo;";
     public int Criar(Tarefa tarefa)
     {
         using(var conexao = new MySqlConnection(connectionString))
