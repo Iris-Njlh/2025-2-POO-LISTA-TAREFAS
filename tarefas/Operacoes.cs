@@ -29,7 +29,7 @@ public class Operacoes
         return null;
     }
 
-    public List<Tarefa> Listar()
+    public IList<Tarefa> Listar()
     {
         return Array.Empty<Tarefa>();
     }
