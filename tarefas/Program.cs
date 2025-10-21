@@ -2,8 +2,8 @@
 Console.WriteLine("Hello, World!");
 
 var tarefa01 = new Tarefa();
-tarefa01.Nome = "Fazer comprar";
-tarefa01.Descricao = "Comprar arroz, feijão e frutas";
+tarefa01.Nome = "Fazer Exercicios";
+tarefa01.Descricao = "Leg Press e Esteira";
 tarefa01.DataCriacao = DateTime.Now;
 tarefa01.Status = 1;
 tarefa01.DataExecucao = null;
