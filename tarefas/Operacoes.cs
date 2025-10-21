@@ -31,9 +31,11 @@ public class Operacoes
 
     public IList<Tarefa> Listar()
     {
+        var tarefas = new List<Tarefa>();
         using(var conexao = new MySqlConnection(connectionString))
         {
             var sql = "SELECT id, nome, descricao, dataCriacao, dataExecucao, status FROM 'tarefa'";
+            conexao.Open();
 
             using (var cmd = new MySqlCommand(sql, conexao))
             using (var reader = cmd.ExecuteReader())
