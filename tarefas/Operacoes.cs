@@ -40,6 +40,7 @@ public class Operacoes
             using (var cmd = new MySqlCommand(sql, conexao))
             using (var reader = cmd.ExecuteReader())
             {
+                while(reader.Read())
                 var tarefa = new Tarefa
                 {
                     Id = reader.GetInt32("id"),
