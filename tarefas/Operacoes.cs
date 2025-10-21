@@ -53,7 +53,7 @@ public class Operacoes
             }
         
         }
-
+        return tarefas;
         
         return Array.Empty<Tarefa>();
     }
